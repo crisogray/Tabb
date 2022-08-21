@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InstructionView" customModule="Tabb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Up Right Arrow 24pt" translatesAutoresizingMaskIntoConstraints="NO" id="g1c-ba-POD">
+                    <rect key="frame" x="327" y="36" width="24" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="J4e-So-0m2"/>
+                        <constraint firstAttribute="width" constant="24" id="ihx-ZR-t2v"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="No Posts Yet" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nzt-JP-jRq">
+                    <rect key="frame" x="24" y="36" width="287" height="36"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="752" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yht-4a-WVo">
+                    <rect key="frame" x="24" y="80" width="327" height="89.666666666666686"/>
+                    <string key="text">Posts will appear in this channel once you've added some users.
+
+Tap the button in the top right to show the users screen.</string>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nzt-JP-jRq" firstAttribute="top" secondItem="g1c-ba-POD" secondAttribute="top" id="Lm9-bv-UzU"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="yht-4a-WVo" secondAttribute="bottom" constant="16" id="MND-XU-NNk"/>
+                <constraint firstItem="nzt-JP-jRq" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="24" id="OTB-g9-PoP"/>
+                <constraint firstItem="yht-4a-WVo" firstAttribute="trailing" secondItem="g1c-ba-POD" secondAttribute="trailing" id="QRD-np-mh5"/>
+                <constraint firstItem="nzt-JP-jRq" firstAttribute="bottom" secondItem="g1c-ba-POD" secondAttribute="bottom" constant="12" id="fDI-Kd-nli"/>
+                <constraint firstItem="yht-4a-WVo" firstAttribute="leading" secondItem="nzt-JP-jRq" secondAttribute="leading" id="jV8-kR-1x8"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="g1c-ba-POD" secondAttribute="trailing" constant="24" id="nXn-1Q-RFb"/>
+                <constraint firstItem="g1c-ba-POD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="16" id="pmw-s1-nLX"/>
+                <constraint firstItem="yht-4a-WVo" firstAttribute="top" secondItem="nzt-JP-jRq" secondAttribute="bottom" constant="8" id="uN0-Su-wTQ"/>
+                <constraint firstItem="g1c-ba-POD" firstAttribute="leading" secondItem="nzt-JP-jRq" secondAttribute="trailing" constant="16" id="uwA-Bt-ft0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="instructionLabel" destination="yht-4a-WVo" id="0Ba-s9-3RF"/>
+                <outlet property="titleLabel" destination="nzt-JP-jRq" id="Pxi-mw-8vI"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="-321"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Up Right Arrow 24pt" width="24" height="24"/>
+    </resources>
+</document>

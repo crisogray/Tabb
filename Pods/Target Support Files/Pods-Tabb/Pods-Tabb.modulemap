@@ -1,0 +1,6 @@
+framework module Pods_Tabb {
+  umbrella header "Pods-Tabb-umbrella.h"
+
+  export *
+  module * { export * }
+}

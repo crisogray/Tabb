@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13526" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13524"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RRM-xW-xFj" customClass="InstructionView" customModule="Tabb" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="306"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="254" verticalCompressionResistancePriority="752" text="You do not follow anyone on twitter" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmw-AU-xh3">
+                    <rect key="frame" x="16" y="51.5" width="343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" verticalCompressionResistancePriority="751" text="No Twitter Users" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJA-31-Ogy">
+                    <rect key="frame" x="16" y="16" width="343" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="black" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="dmw-AU-xh3" firstAttribute="centerX" secondItem="wKm-oU-axb" secondAttribute="centerX" id="Q7y-y7-o3O"/>
+                <constraint firstItem="wJA-31-Ogy" firstAttribute="centerX" secondItem="wKm-oU-axb" secondAttribute="centerX" id="WLB-Bw-Azd"/>
+                <constraint firstItem="wJA-31-Ogy" firstAttribute="leading" secondItem="wKm-oU-axb" secondAttribute="leading" constant="16" id="cue-s9-Y4x"/>
+                <constraint firstItem="wJA-31-Ogy" firstAttribute="top" secondItem="wKm-oU-axb" secondAttribute="top" constant="16" id="guZ-Z4-A97"/>
+                <constraint firstItem="dmw-AU-xh3" firstAttribute="top" secondItem="wJA-31-Ogy" secondAttribute="bottom" constant="16" id="kpS-Ie-XKL"/>
+                <constraint firstItem="wKm-oU-axb" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="dmw-AU-xh3" secondAttribute="bottom" constant="16" id="sRj-vn-Wj9"/>
+                <constraint firstItem="dmw-AU-xh3" firstAttribute="leading" secondItem="wKm-oU-axb" secondAttribute="leading" constant="16" id="vnJ-qP-sqM"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="wKm-oU-axb"/>
+            <connections>
+                <outlet property="instructionLabel" destination="dmw-AU-xh3" id="ecQ-cN-Fj3"/>
+                <outlet property="titleLabel" destination="wJA-31-Ogy" id="x0c-kH-WGZ"/>
+            </connections>
+            <point key="canvasLocation" x="36.5" y="-680"/>
+        </view>
+    </objects>
+</document>

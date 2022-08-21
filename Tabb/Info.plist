@@ -15,11 +15,55 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.0</string>
+	<string>1.0.1</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>twitterkit-si5SQOPqQfh8UmkdDcnjEDlfU</string>
+				<string>fb116567582169517</string>
+				<string>tabb</string>
+				<string>com.crisogray.Tabb</string>
+				<string>com.googleusercontent.apps.563812178253-bbegsrf38os4ee0ms895dvjedjqph87g</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>3</string>
+	<key>FacebookAppID</key>
+	<string>116567582169517</string>
+	<key>FacebookDisplayName</key>
+	<string>Tabb</string>
+	<key>LSApplicationQueriesSchemes</key>
+	<array>
+		<string>twitter</string>
+		<string>fb</string>
+		<string>youtube</string>
+		<string>instagram</string>
+		<string>twitterauth</string>
+		<string>fbapi</string>
+		<string>fb-messenger-api</string>
+		<string>fbauth2</string>
+		<string>fbshareextension</string>
+	</array>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Muli-SemiBold.ttf</string>
+		<string>Muli-Regular.ttf</string>
+		<string>Muli-Light.ttf</string>
+		<string>Muli-ExtraLight.ttf</string>
+		<string>Muli-ExtraBold.ttf</string>
+		<string>Muli-Bold.ttf</string>
+		<string>Muli-Black.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -28,11 +72,13 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIRequiresFullScreen</key>
+	<true/>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
-		<string>UIInterfaceOrientationLandscapeLeft</string>
-		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>
